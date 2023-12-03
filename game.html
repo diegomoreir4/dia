@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="script.js"></script>
+    <title>Crazy Farmer</title>
+ </head>
+  <body>
+    <h1>Crazy Farmer</h1>
+     <p id="atencao">(Atenção: Não atualize ou exclua essa aba, isso fará com que você perca todo seu progresso!)
+<br>
+(Dica: Quando for parar de jogar, deixe essa aba aberta para que o progresso seja mantido.)</p>
+
+    <p id="dinheiro">💵$<span id="dolares">1000</span></p>
+    <p id="minerio">🎖<span id="ouro"></span> gramas de ouro</p>
+    <p>🍌 <span id="bananasDouradas"></span> bananas douradas</p>
+    <p>🍌 <span id="bananas"></span> bananas em estoque</p>
+    <p>🌳 <span id="bananasPorClique"></span> bananas por cultivo</p>
+    <p>⏱💸 $<span id="dolaresPorClique"></span> de custo por cultivo</p>
+    <p>💵🤝 $<span id="lucroPorClique"></span> de lucro por cada banana cultivada</p>
+    <p>⏱🍌 <span id="bananaAutomatico"></span> bananas cultivadas pelos funcionários (por segundo)</p>
+    <p>⏱💸 $<span id="dolarAutomatico"></span> custo do cultivo dos funcionários (por segundo)</p>
+    <p>💵🤝 $<span id="lucro"></span> de lucro por cada banana cultivada pelos funcionários</p>
+    <p>🌳 Especialista em cultivo <span id="nivel"></span></p>
+    <button onclick="clicarBanana()">Cultivar bananas</button>
+
+   <button onclick="listaMercadoBanana()">Mercado 🍌</button>
+    <ul id="listaMercadoBanana" style="display: none;">
+     <li><button onclick="mercadoBanana1()">Venda 20 bananas por $24</button></li>
+     <li><button onclick="mercadoBanana2()">Venda 100 bananas por $122</button></li>
+     <li><button onclick="mercadoBanana3()">Venda 500 bananas por $628</button></li>
+<li><button onclick="mercadoBanana4()">Venda 2500 bananas por $3.276</button></li>
+     <li><button onclick="mercadoBanana5()">Venda 12500 bananas por $17.432</button></li>
+     <li><button onclick="mercadoBanana6()">Venda 62500 bananas por $102,320</button></li>
+     <li><button onclick="mercadoBanana7()">Venda 312500 bananas por $543,963</button></li>
+    </ul>
+
+   <button onclick="listaUpgradesBanana()">Upgrades 🍌</button>
+    <ul id="listaUpgradesBanana" style="display: none;">
+     <li><button onclick="buyItem1(400, 1.01)">Por $400 aumente o número de bananas por cultivo em 1%</button></li>
+     <li><button onclick="buyItem1(1, 1.06)">Por $2400 aumente o número de bananas por cultivo em 6%</button></li>
+     <li><button onclick="buyItem1(7200, 1.18)">Por $7200 aumente o número de bananas por cultivo em 18%</button></li>
+     <li><button onclick="buyItem2(400, 0.99)">Por $400 diminua o custo de dólares por cultivo em 1%</button></li>
+     <li><button onclick="buyItem2(2400, 0.94)">Por $2400 diminua o custo de dolares por cultivo em 6%</button></li>
+     <li><button onclick="buyItem2(7200, 0.82)">Por $7200 diminua o custo de dolares por cultivo em 18%</button></li>
+     <li><button onclick="buyItem3(400, 1.01)">Por $400 aumente a eficiência dos funcionários em 1%</button></li>
+     <li><button onclick="buyItem3(2400, 1.06)">Por $2400 aumente a eficiência dos funcionários em 6%</button></li>
+     <li><button onclick="buyItem3(7200, 1.18)">Por $7200 aumente a eficiência dos funcionários em 18%</button></li>
+     <li><button onclick="buyItem4(400, 0.99)">Por $400 diminua o custo do cultivo dos funcionários em 1%</button></li>
+     <li><button onclick="buyItem4(2400, 0.94)">Por $2400 diminua o custo do cultivo dos funcionários em 6%</button></li>
+     <li><button onclick="buyItem4(7200, 0.82)">Por $7200 diminua o custo do cultivo dos funcionários em 18%</button></li>
+   </ul>
+
+   <button onclick="listaMercadoOuro()">Mercado 🎖</button>
+    <ul id="listaMercadoOuro" style="display: none;">
+     <li><button onclick="buyItem5(20, 1)">Por 20 gramas de ouro, compre 1 banana dourada</button></li>
+    </ul>
+
+    <p id="numeroVolatil"></p>
+<button onclick="mercadoBanana8()">Venda 1 banana dourada</button>
+  </body>
+</html>
